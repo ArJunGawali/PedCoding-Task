@@ -1,0 +1,9 @@
+#weekdays {
+  width: "100px";
+  height: "80px";
+  background-color: "lightcyan";
+  margin: "5px";
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+}

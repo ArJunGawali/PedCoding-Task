@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "d3ba67bf-2bd6-490a-be50-da9997d8ed11",
+		"name": "Scheduler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/Events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"Events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Events By Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Events ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/Events/delete/?id=Ambarish12:0013:0001012021",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"Events",
+						"delete",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "Ambarish12:0013:0001012021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/addEvent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"addEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Teachers on particular Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/Events/teachers/02012021",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"Events",
+						"teachers",
+						"02012021"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Particular teacher's event on the day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/Events/date/teacher/02012021?teacher=jagu",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"Events",
+						"date",
+						"teacher",
+						"02012021"
+					],
+					"query": [
+						{
+							"key": "teacher",
+							"value": "jagu"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
